@@ -6,7 +6,7 @@ remain anonymous to avoid inundating the site with scripted sign-ups.
 ## Installation
 
 In order to build this repository, you must have [Leiningen](https://leiningen.org/) and the Java SDK installed on your 
-machine. Leiningen must also be in your path. Once you have installed both of these:
+machine. You should also have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed. Leiningen must also be in your path. Once you have installed both of these:
 
 *  ```git clone https://github.com/Kyle-Hermens/swimscraper.git```
 * ```cd swimscraper```
@@ -18,7 +18,7 @@ This will build a standalone jar in the target directory.
 ## Usage
 This project relies on the Clojure [config](https://github.com/yogthos/config) library. The
 library specifies the precedence for various configuration sources, but the easiest route for the consumer of the jar
-file is likely placing a ```config.edn``` file in the directory where the jar should run.
+file is placing a ```config.edn``` file in the directory where the jar should run.
 
 The config file should specify the following keys:
 

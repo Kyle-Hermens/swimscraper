@@ -45,13 +45,13 @@
           (clojure.string/includes? % (:swim-activity env))))))
 
 (defn query-class-register-button [driver]
-  (as->  (query-all driver {:css "table.ListItem"}) tables
+  (->>  (query-all driver {:css "table.ListItem"})
     (filter
-     #(find-appointment % driver)
-     tables)
-    (first tables)
-    (js-execute driver javascript (el->ref tables))
-    (:ELEMENT tables)))
+     #(find-appointment % driver))
+    (first)
+    (el->ref)
+    (js-execute driver javascript)
+    (:ELEMENT)))
 
 (defn sign-up []
   (with-chrome-headless {} chrome-driver
