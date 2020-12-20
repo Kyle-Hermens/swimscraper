@@ -46,12 +46,14 @@
 
 (defn query-class-register-button [driver]
   (->>  (query-all driver {:css "table.ListItem"})
-    (filter
-     #(find-appointment % driver))
-    (first)
-    (el->ref)
-    (js-execute driver javascript)
-    (:ELEMENT)))
+        (filter
+         #(find-appointment % driver))
+        (first)
+        (el->ref)
+        (js-execute driver javascript)
+        (vals)
+        (first)
+        ))
 
 (defn sign-up []
   (with-chrome-headless {} chrome-driver
