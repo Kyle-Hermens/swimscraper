@@ -27,14 +27,14 @@ The config file should specify the following keys:
  :swim-pass "password here"
  :swim-url "the url of the anonymous website"
  :swim-time "the preferred timeslot for the swim lane"
- :swim-activity "the activity name of the swim lane" ; This technically means you could figure out
+ :swim-activity "the activity name for the swim lane"
  }
 ```
 
 
 Once this file is in place, the script can be run via:
 
-```java -jar swim-scraper-0.1.0-standalone.jar```
+```java -jar ./target/swim-scraper-0.1.0-standalone.jar```
 
 Naturally, the script won't truly work unless you've managed to divine the website it is intended for. In which case,
 I praise your deductive and/or psychic abilities. Please don't steal my credit card information.
