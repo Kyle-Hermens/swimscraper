@@ -6,7 +6,7 @@ remain anonymous to avoid inundating the site with scripted sign-ups.
 ## Installation
 
 In order to build this repository, you must have [Leiningen](https://leiningen.org/) and the Java SDK installed on your 
-machine. You should also have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed. Leiningen must also be in your path. Once you have installed both of these:
+machine. You should also have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed. Leiningen must also be in your path. Once you have installed these:
 
 *  ```git clone https://github.com/Kyle-Hermens/swimscraper.git```
 * ```cd swimscraper```
