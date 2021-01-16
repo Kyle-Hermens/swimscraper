@@ -5,8 +5,8 @@ as part of a regularly scheduled cron job. The implementation is specific to a s
 remain anonymous to avoid inundating the site with scripted sign-ups.
 ## Installation
 
-In order to build this repository, you must have [Leiningen](https://leiningen.org/) and the Java SDK installed on your 
-machine. You should also have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed. Leiningen must also be in your path. Once you have installed these:
+In order to build this repository, you must have [Leiningen](https://leiningen.org/), [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads),  and the Java SDK installed on your 
+machine. Leiningen must also be in your path. Once you have all of this set up:
 
 *  ```git clone https://github.com/Kyle-Hermens/swimscraper.git```
 * ```cd swimscraper```
